@@ -1,14 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./components";
+
 import Footer from "./components/Footer";
-import Banner from "./components/Banner";
+import PageRoute from "./components";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Banner />
-    <App />
+    <PageRoute />
     <Footer />
   </React.StrictMode>
 );
