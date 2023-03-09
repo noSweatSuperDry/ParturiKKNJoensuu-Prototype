@@ -20,7 +20,12 @@ export default function Banner() {
 
   return (
     <div className="image-container">
-      <img src={images[currentIndex]} alt="shuffled" />
+      <img
+        height={250}
+        width={1000}
+        src={images[currentIndex]}
+        alt="shuffled"
+      />
     </div>
   );
 }
