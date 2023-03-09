@@ -1,4 +1,3 @@
-import Container from "react-bootstrap/Container";
 import Tab from "react-bootstrap/Tab";
 import { useState } from "react";
 import Tabs from "react-bootstrap/Tabs";
@@ -10,12 +9,15 @@ function PageRoute() {
   const [key, setKey] = useState("home");
   return (
     <Tabs
+      defaultActiveKey="profile"
       id="fill-tab-example"
+      style={StyleSheet.Tab}
+      className="mb-3"
+      fill
       activeKey={key}
       onSelect={(k) => setKey(k)}
-      className="mb-3"
     >
-      <Tab eventKey="home" title="Home">
+      <Tab style={StyleSheet.InsideTab} eventKey="home" title="Home">
         <Home />
       </Tab>
       <Tab eventKey="Price" title="Price List">
@@ -29,3 +31,9 @@ function PageRoute() {
 }
 
 export default PageRoute;
+
+const StyleSheet = {
+  Tab: {
+    backgroundColor: "pink",
+  },
+};
