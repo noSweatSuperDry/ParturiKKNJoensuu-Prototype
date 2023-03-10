@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Home/index";
 import PriceList from "./PriceList/index";
 import AboutUs from "./AboutUs/index";
-import Appointment from "./Appointment/index"
+import Appointment from "./Appointment/index";
 
 function PageRoute() {
   const [key, setKey] = useState("home");
@@ -22,7 +22,7 @@ function PageRoute() {
         <Home />
       </Tab>
       <Tab eventKey="appointment" title="Appointment">
-        <Appointment/>
+        <Appointment />
       </Tab>
       <Tab eventKey="Price" title="Price List">
         <PriceList />
@@ -35,4 +35,3 @@ function PageRoute() {
 }
 
 export default PageRoute;
-
