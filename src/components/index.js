@@ -5,20 +5,24 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Home/index";
 import PriceList from "./PriceList/index";
 import AboutUs from "./AboutUs/index";
+import Appointment from "./Appointment/index"
+
 function PageRoute() {
   const [key, setKey] = useState("home");
   return (
     <Tabs
       defaultActiveKey="profile"
       id="fill-tab-example"
-      style={StyleSheet.Tab}
       className="mb-3"
       fill
       activeKey={key}
       onSelect={(k) => setKey(k)}
     >
-      <Tab style={StyleSheet.InsideTab} eventKey="home" title="Home">
+      <Tab eventKey="home" title="Home">
         <Home />
+      </Tab>
+      <Tab eventKey="appointment" title="Appointment">
+        <Appointment/>
       </Tab>
       <Tab eventKey="Price" title="Price List">
         <PriceList />
@@ -32,8 +36,3 @@ function PageRoute() {
 
 export default PageRoute;
 
-const StyleSheet = {
-  Tab: {
-    backgroundColor: "pink",
-  },
-};
