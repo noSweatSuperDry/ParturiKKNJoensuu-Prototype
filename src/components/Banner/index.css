@@ -1,0 +1,14 @@
+.banner-container {
+  background-color: white;
+  padding: 20px;
+  margin: auto auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center; /* added to center the image horizontally */
+}
+img {
+  height: 150px;
+  display: block; /* added to center the image vertically */
+  margin: 0 auto; /* added to center the image horizontally */
+}

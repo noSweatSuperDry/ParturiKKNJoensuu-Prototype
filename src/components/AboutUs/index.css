@@ -1,22 +1,23 @@
-.container-priceList {
+.container-aboutUs {
   position: relative; /* added to make the container the positioning context for the image */
   width: 100%;
   height: 100vh; /* added to set the container height to the full viewport height */
   overflow: hidden; /* added to hide any parts of the image that exceed the container */
 }
 
-.container-priceList img {
-  position: relative; /* added to position the image relative to the container */
+.container-aboutUs img {
+  position: absolute; /* added to position the image relative to the container */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover; /* added to make the image fill the container */
 }
-.text-priceList {
-  position: absolute;
-  top: 50%;
+.text-aboutUs {
+  position: relative;
+  top: 10%;
   left: 50%;
+  right: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(
     255,
@@ -26,13 +27,4 @@
   ); /* added to make the text field opaque white */
   padding: 20px;
   border-radius: 5px;
-  z-index: 1;
-}
-.Card {
-  position: relative;
-  z-index: 2;
-}
-.Card.Img {
-  width: 100%;
-  height: 100%;
 }

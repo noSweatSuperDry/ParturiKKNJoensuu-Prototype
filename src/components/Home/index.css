@@ -1,0 +1,29 @@
+.container-home {
+  position: relative; /* added to make the container the positioning context for the image */
+  width: 100%;
+  height: 100vh; /* added to set the container height to the full viewport height */
+  overflow: hidden; /* added to hide any parts of the image that exceed the container */
+}
+
+.container-home img {
+  position: absolute; /* added to position the image relative to the container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* added to make the image fill the container */
+}
+.text-field {
+  position: absolute;
+  top: 11%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* added to make the text field opaque white */
+  padding: 20px;
+  border-radius: 5px;
+}

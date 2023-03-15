@@ -15,7 +15,6 @@ function App() {
       id="justify-tab-example"
       className="mb-3"
       style={{
-        backgroundColor: "red",
         fontWeight: "bold",
       }}
       justify
