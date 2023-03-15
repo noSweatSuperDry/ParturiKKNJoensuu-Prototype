@@ -7,14 +7,18 @@ import PriceList from "./PriceList/index";
 import AboutUs from "./AboutUs/index";
 import Appointment from "./Appointment/index";
 
-function PageRoute() {
+function App() {
   const [key, setKey] = useState("home");
   return (
     <Tabs
       defaultActiveKey="profile"
-      id="fill-tab-example"
+      id="justify-tab-example"
       className="mb-3"
-      fill
+      style={{
+        backgroundColor: "red",
+        fontWeight: "bold",
+      }}
+      justify
       activeKey={key}
       onSelect={(k) => setKey(k)}
     >
@@ -34,4 +38,4 @@ function PageRoute() {
   );
 }
 
-export default PageRoute;
+export default App;

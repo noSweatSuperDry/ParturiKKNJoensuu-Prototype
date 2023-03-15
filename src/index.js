@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import Footer from "./components/Footer";
-import PageRoute from "./components";
+import App from "./components";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <PageRoute />
+    <App />
     <Footer />
   </React.StrictMode>
 );

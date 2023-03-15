@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function Appointment() {
   return (
-    <div>Appointment</div>
-  )
+    <div className="container">
+      <div>Appointment</div>
+    </div>
+  );
 }

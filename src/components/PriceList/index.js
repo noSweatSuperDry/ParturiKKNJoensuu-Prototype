@@ -2,10 +2,9 @@ import React from "react";
 import "./index.css";
 export default function PriceList() {
   const data = [
-    { name: "Hair Cut", Price: "25" },
-    { name: "Beard Trimming", Price: "15" },
-    { name: "Hair Treatment", Price: "35" },
-    { name: "Student Discount", Price: "-10%" },
+    { name: "Hair Cut", Price: "25€" },
+    { name: "Beard Trimming", Price: "20€" },
+    { name: "Student Discount", Price: "23€" },
   ];
   return (
     <div className="container">
