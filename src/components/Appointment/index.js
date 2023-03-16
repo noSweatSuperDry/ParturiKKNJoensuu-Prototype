@@ -1,5 +1,5 @@
 import React from "react";
-import HomeImage from "../../asset/images/AboutUs.jpeg";
+// import HomeImage from "../../asset/images/AboutUs.jpeg";
 import "./index.css";
 export default function Appointment() {
   return (
