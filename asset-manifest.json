@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/react_frontend_kkn_parturi/static/css/main.d714ce28.css",
+    "main.js": "/react_frontend_kkn_parturi/static/js/main.c046716f.js",
+    "static/media/AboutUs.jpeg": "/react_frontend_kkn_parturi/static/media/AboutUs.2d89bf60dc9156ee9d29.jpeg",
+    "static/media/Home.jpeg": "/react_frontend_kkn_parturi/static/media/Home.3bce77085d17212ec802.jpeg",
+    "static/media/Price.jpg": "/react_frontend_kkn_parturi/static/media/Price.79ee3458d8339bd05534.jpg",
+    "static/media/Banner.jpg": "/react_frontend_kkn_parturi/static/media/Banner.306a4aec7468232ec07c.jpg",
+    "static/media/haircard.jpg": "/react_frontend_kkn_parturi/static/media/haircard.3a4d78b54bae2688a39c.jpg",
+    "index.html": "/react_frontend_kkn_parturi/index.html",
+    "main.d714ce28.css.map": "/react_frontend_kkn_parturi/static/css/main.d714ce28.css.map",
+    "main.c046716f.js.map": "/react_frontend_kkn_parturi/static/js/main.c046716f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d714ce28.css",
+    "static/js/main.c046716f.js"
+  ]
+}
