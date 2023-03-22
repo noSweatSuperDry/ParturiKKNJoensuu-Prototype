@@ -15,7 +15,6 @@
 }
 .text-appointment {
   position: relative;
-
   background-color: rgba(
     255,
     255,
@@ -27,6 +26,6 @@
 }
 .text-appointment iframe {
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   border: 0;
 }

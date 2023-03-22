@@ -14,10 +14,7 @@
   object-fit: cover; /* added to make the image fill the container */
 }
 .text-field {
-  position: absolute;
-  top: 11%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   background-color: rgba(
     255,
     255,

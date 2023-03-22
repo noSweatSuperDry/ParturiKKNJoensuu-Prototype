@@ -15,10 +15,7 @@
 }
 .text-aboutUs {
   position: relative;
-  top: 10%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
+
   background-color: rgba(
     255,
     255,
