@@ -24,3 +24,32 @@
   padding: 20px;
   border-radius: 5px;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 3s linear infinite; /* Updated */
+}
+
+.box {
+  background: red;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  width: auto;
+  height: 50px;
+  border-radius: 5px;
+  margin: auto;
+  animation: rotate 3s linear infinite; /* Updated */
+}
+@keyframes rotate {
+  from {
+    transform: rotate(-1deg);
+  }
+  to {
+    transform: rotate(1deg);
+  }
+}
