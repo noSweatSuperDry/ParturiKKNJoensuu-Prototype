@@ -29,7 +29,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: rotate 3s linear infinite; /* Updated */
 }
 
 .box {
@@ -62,8 +61,6 @@
   width: auto;
   height: 50px;
   border-radius: 5px;
-  margin: auto;
-  margin: 1cm;
   padding: 1cm;
   animation: rotate 3s linear infinite; /* Updated */
 }
@@ -78,6 +75,15 @@
   height: 50px;
   border-radius: 5px;
   margin: 1cm;
-  padding: 1cm;
+  border-color: black;
+
+  border-width: 1cm;
   animation: rotate 3s linear infinite; /* Updated */
+}
+.text-condition {
+  margin: 1cm;
+}
+.row-content {
+  flex: 1;
+  flex-direction: row;
 }
