@@ -23,8 +23,6 @@
   ); /* added to make the text field opaque white */
   padding: 20px;
   border-radius: 5px;
-}
-.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,9 +57,12 @@
   text-align: center;
   line-height: 50px;
   width: auto;
-  height: 50px;
+  height: auto;
   border-radius: 5px;
-  padding: 1cm;
+  margin: 1cm;
+  border-color: black;
+
+  border-width: 1cm;
   animation: rotate 3s linear infinite; /* Updated */
 }
 .box-close {
@@ -70,13 +71,11 @@
   font-size: 36px;
   font-weight: bold;
   text-align: center;
-  line-height: 50px;
-  width: auto;
-  height: 50px;
+
+  width: max-content;
   border-radius: 5px;
   margin: 1cm;
-  border-color: black;
-
+  padding-inline: 1cm;
   border-width: 1cm;
   animation: rotate 3s linear infinite; /* Updated */
 }
@@ -86,4 +85,8 @@
 .row-content {
   flex: 1;
   flex-direction: row;
+}
+.open-close {
+  justify-content: center;
+  align-items: center;
 }

@@ -16,18 +16,16 @@ function Home() {
     <div className="container-home">
       <img src={HomeImage} alt="home" />
       <div className="text-field">
-        <div class="container">
-          <div class="box">WELCOME TO PARTURI KKN</div>
-          <div class="box">WE ARE</div>
-          <div>
-            {isOpen ? (
-              <div class="box-open">OPEN</div>
-            ) : (
-              <div class="box-close">CLOSED</div>
-            )}
-          </div>
-          <div class="box">NOW</div>
+        <div className="box">WELCOME TO PARTURI KKN</div>
+        <div className="box">WE ARE</div>
+        <div className="open-close">
+          {isOpen ? (
+            <div className="box-open">OPEN</div>
+          ) : (
+            <div className="box-close">CLOSED</div>
+          )}
         </div>
+        <div className="box">NOW</div>
       </div>
     </div>
   );

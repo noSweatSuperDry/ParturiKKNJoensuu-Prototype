@@ -10,7 +10,7 @@ export default function PriceList() {
     <div className="container-priceList">
       <img src={PricePic} alt="home" />
       <div className="text-priceList">
-        <div className="cardPrice"></div>
+        <div className="cardPrice">// //</div>
       </div>
     </div>
   );
