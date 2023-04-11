@@ -16,8 +16,8 @@ function Home() {
     <div className="container-home">
       <img src={HomeImage} alt="home" />
       <div className="text-field">
-        <div className="box">WELCOME TO PARTURI KKN</div>
-        <div className="box">WE ARE</div>
+      <div className="box">WELCOME TO </div>
+      <div className="box">PARTURI KKN</div>
         <div className="open-close">
           {isOpen ? (
             <div className="box-open">OPEN</div>
@@ -26,6 +26,7 @@ function Home() {
           )}
         </div>
         <div className="box">NOW</div>
+        <div> </div>
       </div>
     </div>
   );

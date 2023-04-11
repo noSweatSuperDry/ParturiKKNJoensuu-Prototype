@@ -23,4 +23,41 @@
   ); /* added to make the text field opaque white */
   padding: 20px;
   border-radius: 5px;
+  
+}
+
+.xCard{
+  background-color: red;
+  margin: auto;
+ width: fit-content;
+ height: fit-content;
+ border: 1cm;
+ border-color: blue;
+ border-radius: 0.7cm;
+ margin: auto;
+ padding: auto;
+ justify-content: center;
+ align-items: center;
+}
+.bigText{
+  font-size:large;
+  margin: auto;
+  font-weight: bolder;
+  color: white;
+  margin: auto;
+  padding: auto;
+  
+}.cardPrice{
+  font-size: 1cm;
+  font-weight: bold;
+  color: white;
+  margin: auto;
+  padding: auto;
+
+}
+.xCard img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+
 }

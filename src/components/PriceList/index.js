@@ -10,9 +10,13 @@ export default function PriceList() {
     <div className="container-priceList">
       <img src={PricePic} alt="home" />
       <div className="text-priceList">
-        <div className="cardPrice">//
-        <div className="bigText"></div>
-         //</div>
+      {/* card design */}
+        <div className="xCard">
+        <img src={hairCard} alt="hair"></img>
+        <div className="cardPrice">25€</div>
+        <p className="bigText">Hair Cut</p>
+         </div>
+      
       </div>
     </div>
   );
