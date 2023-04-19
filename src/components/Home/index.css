@@ -40,6 +40,33 @@
   height: 50px;
   border-radius: 5px;
   margin: auto;
+  font-family: "GoldmanBold"
+}
+
+.boxphoneno {
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  width: auto;
+  height: 50px;
+  border-radius: 5px;
+  margin: auto;
+
+  font-family: 'Hanalei Fill', cursive;
+}
+.boxname {
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  width: auto;
+  height: 50px;
+  border-radius: 5px;
+  margin: auto;
+  font-family: "GoldmanBold"
 }
 @keyframes rotate {
   from {
@@ -57,7 +84,7 @@
   font-weight: bold;
   text-align: center;
   line-height: 50px;
-  width: auto;
+  width: 200px;
   height: auto;
   border-radius: 5px;
   margin: 1cm;
@@ -73,7 +100,7 @@
   font-weight: bold;
   text-align: center;
 
-  width: max-content;
+  width: 200px;
   border-radius: 5px;
   margin: 1cm;
   padding-inline: 1cm;
