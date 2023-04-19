@@ -12,11 +12,25 @@ export default function PriceList() {
       <div className="text-priceList">
       {/* card design */}
         <div className="xCard">
+        <div className="bigText">Hair Cut</div>
         <img src={hairCard} alt="hair"></img>
         <div className="cardPrice">25€</div>
-        <div className="bigText">Hair Cut</div>
-         </div>
-      
+       
+        </div>
+       {/* card design */}
+       <div className="xCard">
+       <div className="bigText">Beard Trimming</div>
+        <img src={beardCard} alt="beard"></img>
+        <div className="cardPrice">20€</div>
+        
+        </div>
+         {/* card design */}
+         <div className="xCard">
+         <div className="bigText">Student Hair Cut</div>
+        <img src={studentCard} alt="student"></img>
+        <div className="cardPrice">23€</div>
+       
+        </div>
       </div>
     </div>
   );

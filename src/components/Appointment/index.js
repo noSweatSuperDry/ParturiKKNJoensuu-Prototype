@@ -6,7 +6,7 @@ export default function Appointment() {
     <div className="text-appointment">
       <iframe
         title="Appointment Page"
-        src="https://slotti.fi/booking/nosweatsuperdry/"
+        src="https://slotti.fi/booking/jagger/"
       />
     </div>
   );

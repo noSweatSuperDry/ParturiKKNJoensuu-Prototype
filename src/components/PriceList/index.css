@@ -2,7 +2,7 @@
   position: relative; /* added to make the container the positioning context for the image */
   width: 100%;
   height: 100vh; /* added to set the container height to the full viewport height */
-  overflow: hidden; /* added to hide any parts of the image that exceed the container */
+  overflow:auto; /* added to hide any parts of the image that exceed the container */
 }
 
 .container-priceList img {
@@ -16,50 +16,45 @@
 .text-priceList {
   position: relative;
   top: 1cm;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: rgba(
     255,
     255,
     255,
     0.8
   ); /* added to make the text field opaque white */
-  padding: 20px;
-  border-radius: 5px;
-  
+ 
 }
 
 .xCard{
   background-color: grey;
-  margin: auto;
  width: fit-content;
  height: fit-content;
- border: 1cm;
- border-color: blue;
- border-radius: 0.7cm;
- margin: auto;
- padding: auto;
- justify-content: center;
- align-items: center;
+border-radius: 1cm;
+margin: 1cm;
 }
 .bigText{
-  font-size:large;
-  margin: auto;
+  background-color: red;
+  font-size:1cm;
   font-weight: bolder;
   color: white;
-  margin: auto;
-  padding: auto;
-  
-  
+  width: 200px;
+  height: 200px;
 }.cardPrice{
-  font-size: 1cm;
+  background-color: red;
+  font-size: 2cm;
   font-weight: bold;
   color: white;
   margin: auto;
   padding: auto;
-
+  width: 200px;
+  height: fit-content;
 }
 .xCard img {
   width: 200px;
   height: 200px;
   position: relative;
-
 }
