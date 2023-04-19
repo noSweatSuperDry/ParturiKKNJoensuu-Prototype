@@ -33,7 +33,7 @@ function Home() {
         <div className="box">Get Your Hair Cut With or Without any appointment.</div>
        
         <a className="box-open" style={{width:300, backgroundColor:"red"}}
-   href="https://slotti.fi/booking/ESIMERKKI">
+   href="https://slotti.fi/booking/parturikkn/">
     Book Appointment / Varaa aika
 </a>
       </div>

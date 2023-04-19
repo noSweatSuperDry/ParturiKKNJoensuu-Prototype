@@ -18,6 +18,23 @@ export default function AboutUs() {
       </div>
       <div className="text-aboutUs">
         <h2>Contact</h2>
+        <p>
+        Address: Torikatu 23, 80100 Joensuu
+        </p>
+        <p>
+        Phone: 046 8456395
+        </p>
+        <p>
+        Follow us: 
+        </p>
+        <a className="box-open" style={{width:300, backgroundColor:"#3b5998"}}
+   href="https://www.facebook.com/Parturikkn/">
+    Facebook: Parturikkn
+</a>
+<a className="box-open" style={{width:300, backgroundColor:"red"}}
+   href="https://slotti.fi/booking/ESIMERKKI">
+    Instagram: @parturi_kkn 
+</a>
       </div>
     </div>
   );
