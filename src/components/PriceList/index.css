@@ -15,6 +15,7 @@
 }
 .text-priceList {
   position: relative;
+  top: 1cm;
   background-color: rgba(
     255,
     255,
@@ -27,7 +28,7 @@
 }
 
 .xCard{
-  background-color: red;
+  background-color: grey;
   margin: auto;
  width: fit-content;
  height: fit-content;
@@ -46,6 +47,7 @@
   color: white;
   margin: auto;
   padding: auto;
+  
   
 }.cardPrice{
   font-size: 1cm;

@@ -14,8 +14,8 @@
   object-fit: cover; /* added to make the image fill the container */
 }
 .text-aboutUs {
+  top: 1cm;
   position: relative;
-
   background-color: rgba(
     255,
     255,

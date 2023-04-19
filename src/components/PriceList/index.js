@@ -14,7 +14,7 @@ export default function PriceList() {
         <div className="xCard">
         <img src={hairCard} alt="hair"></img>
         <div className="cardPrice">25€</div>
-        <p className="bigText">Hair Cut</p>
+        <div className="bigText">Hair Cut</div>
          </div>
       
       </div>
