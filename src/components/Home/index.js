@@ -2,14 +2,25 @@ import React, { useState, useEffect } from "react";
 import HomeImage from "../../asset/images/Home.jpeg";
 import "./index.css";
 function Home() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenWeekTime, setIsOpenWeekTime] = useState(false);
+  const [isOpenWeekendTime, setIsOpenWeekendTime] = useState(false);
+  const [isShopDay, setShopday] = useState(false);
 
+  
+  
+ 
   useEffect(() => {
     const now = new Date();
     const hours = now.getHours();
     const minutes = now.getMinutes();
+    const today = new Date();
+  const shopDay = today.toLocaleString('default', { weekday: 'long' });
     console.log(hours, minutes);
-    setIsOpen(hours >= 9 && (hours < 18 || (hours === 18 && minutes === 0)));
+    setIsOpenWeekTime(hours >= 9 && (hours < 19 || (hours === 19 && minutes === 0)));
+    setIsOpenWeekendTime(hours >= 9 && (hours < 19 || (hours === 19 && minutes === 0)));
+    if (shopDay === 'Monday' || shopDay === 'Tuesday' || shopDay === 'Wednesday' || shopDay === 'Thursday' || shopDay === 'Friday' || shopDay === 'Saturday') {
+      setShopday(true);
+    }
   }, []);
 
   return (
@@ -18,21 +29,26 @@ function Home() {
       <div className="text-field">
       <div className="box">WELCOME TO </div>
       <div className="boxname">PARTURI KKN</div>
-        <div className="open-close">
-          {isOpen ? (
+        {isShopDay ? (<div className="open-close">
+          {isOpenWeekTime ? (
             <div className="box-open">OPEN</div>
           ) : (
             <div className="box-close">CLOSED</div>
           )}
-        </div>
-        <div>Monday - Friday : 9AM - 7PM</div>
-        <div>Saturday : 9AM - 5PM</div>
-        <div className="box">YOU ARE WELCOME ANYTIME TO OUR SHOP NOW</div>
+        </div>):(<div className="open-close">
+          {isOpenWeekendTime ? (
+            <div className="box-open">OPEN</div>
+          ) : (
+            <div className="box-close">CLOSED</div>
+          )}
+        </div>)}
+        <div style={{marginTop:'0.3cm'}}>Monday - Friday : 9AM - 7PM</div>
+        <div style={{marginBottom:'0.3cm'}}>Saturday : 9AM - 5PM</div>
         <div className="box">CALL US</div>
         <div className="boxphoneno"> 046 8456395</div>
-        <div className="box">Get Your Hair Cut With or Without any appointment.</div>
+        <div className="box">COME WITH OR WITHOUT ANY APPOINTMENT!</div>
        
-        <a className="box-open" style={{width:300, backgroundColor:"red"}}
+        <a className="box-appointment" style={{width:300, backgroundColor:"red"}}
    href="https://slotti.fi/booking/parturikkn/">
     Book Appointment / Varaa aika
 </a>
