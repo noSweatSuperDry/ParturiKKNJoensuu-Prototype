@@ -32,7 +32,7 @@ export default function AboutUs() {
     Facebook: Parturikkn
 </a>
 <a className="box-open" style={{width:300, backgroundColor:"red"}}
-   href="https://slotti.fi/booking/ESIMERKKI">
+   href="https://www.instagram.com/parturi_kkn/?hl=en">
     Instagram: @parturi_kkn 
 </a>
       </div>
