@@ -1,63 +1,108 @@
-.container-priceList {
-  position: relative; /* added to make the container the positioning context for the image */
-  width: 100%;
-  height: 100vh; /* added to set the container height to the full viewport height */
-  overflow:scroll; /* added to hide any parts of the image that exceed the container */
+.pricing {
+  position: relative;
+  margin-top: clamp(3.5rem, 9vw, 5.2rem);
 }
 
-.container-priceList img {
-  position: absolute; /* added to position the image relative to the container */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* added to make the image fill the container */
+.pricing__image {
+  filter: brightness(0.65) saturate(1.05);
 }
-.text-priceList {
+
+.pricing__overlay {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.86), rgba(15, 23, 42, 0.6));
+}
+
+.pricing__content {
+  display: grid;
+  gap: 2.75rem;
+}
+
+.pricing__intro {
+  max-width: 620px;
+  display: grid;
+  gap: 1rem;
+}
+
+.pricing__intro h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 600;
+}
+
+.pricing__intro p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.pricing__grid {
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.price-card {
   position: relative;
-  top: 1cm;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--color-secondary);
+  border-radius: var(--radius-medium);
+  padding: 1.9rem;
   display: flex;
-  width:max-content;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* added to make the text field opaque white */
- 
+  flex-direction: column;
+  gap: 1.25rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
 }
 
-.xCard{
-  background-color: grey;
- width: max-content;
- height: max-content;
-border-radius: 1cm;
-margin: .3cm;
+.price-card__visual {
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  background: rgba(179, 38, 53, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.bigText{
-  background-color: red;
-  font-size:1cm;
-  text-align: center;
-  font-weight: bolder;
-  color: white;
-  width: 200px;
-  height: 150px;
-}.cardPrice{
-  background-color: red;
-  font-size: 2cm;
-  font-weight: bold;
-  color: white;
-  margin: auto;
-  padding: auto;
-  text-align: center;
-  width: 200px;
-  height: fit-content;
+
+.price-card__visual img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
 }
-.xCard img {
-  width: 200px;
-  height: 200px;
-  position: relative;
+
+.price-card__body h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.price-card__body p {
+  margin: 0.4rem 0 0;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.price-card__price {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 0.35rem 1.1rem;
+  border-radius: 999px;
+  background: rgba(179, 38, 53, 0.14);
+  color: var(--color-primary);
+}
+
+.pricing__note {
+  margin: 0;
+  max-width: 580px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+  .price-card {
+    padding: 1.5rem;
+  }
 }

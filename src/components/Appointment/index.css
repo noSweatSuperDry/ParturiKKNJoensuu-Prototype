@@ -1,31 +1,48 @@
-.container-appointment {
-  position: relative; /* added to make the container the positioning context for the image */
-  width: 100%;
-  height: 100vh; /* added to set the container height to the full viewport height */
-  overflow: hidden; /* added to hide any parts of the image that exceed the container */
+.appointment {
+  background: var(--color-surface);
+  border-radius: var(--radius-large);
+  box-shadow: var(--shadow-soft);
+  padding: clamp(2.2rem, 5vw, 3.2rem);
+  display: grid;
+  gap: 2.2rem;
 }
 
-.container-appointment img {
-  position: absolute; /* added to position the image relative to the container */
-  top: 0;
-  left: 0;
+.appointment__intro {
+  max-width: 640px;
+  display: grid;
+  gap: 1rem;
+  color: var(--color-secondary);
+}
+
+.appointment__intro h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-weight: 600;
+}
+
+.appointment__intro p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.appointment__frame {
+  border-radius: var(--radius-medium);
+  overflow: hidden;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  min-height: 620px;
+}
+
+.appointment__frame iframe {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* added to make the image fill the container */
-}
-.text-appointment {
-  position: relative;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* added to make the text field opaque white */
-  padding: 20px;
-  border-radius: 5px;
-}
-.text-appointment iframe {
-  width: 100%;
-  height: 100vh;
   border: 0;
+  background: #f8fafc;
+}
+
+@media (max-width: 768px) {
+  .appointment__frame {
+    min-height: 520px;
+  }
 }

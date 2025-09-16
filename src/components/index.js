@@ -9,31 +9,30 @@ import Appointment from "./Appointment/index";
 
 function App() {
   const [key, setKey] = useState("home");
+
   return (
-    <Tabs
-      defaultActiveKey="profile"
-      id="justify-tab-example"
-      className="mb-3"
-      style={{
-        fontWeight: "bold",
-      }}
-      justify
-      activeKey={key}
-      onSelect={(k) => setKey(k)}
-    >
-      <Tab eventKey="home" title="Home">
-        <Home />
-      </Tab>
-      <Tab eventKey="appointment" title="Appointment">
-        <Appointment />
-      </Tab>
-      <Tab eventKey="Price" title="Price List">
-        <PriceList />
-      </Tab>
-      <Tab eventKey="contact" title="About Us">
-        <AboutUs />
-      </Tab>
-    </Tabs>
+    <main className="site-main">
+      <Tabs
+        id="site-sections"
+        className="site-tabs"
+        justify
+        activeKey={key}
+        onSelect={(k) => k && setKey(k)}
+      >
+        <Tab eventKey="home" title="Home">
+          <Home />
+        </Tab>
+        <Tab eventKey="appointment" title="Appointment">
+          <Appointment />
+        </Tab>
+        <Tab eventKey="Price" title="Price List">
+          <PriceList />
+        </Tab>
+        <Tab eventKey="contact" title="About Us">
+          <AboutUs />
+        </Tab>
+      </Tabs>
+    </main>
   );
 }
 

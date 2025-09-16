@@ -1,20 +1,66 @@
-.banner-container {
+.banner {
   position: relative;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.75
-  );
-  padding: 20px;
-  margin: auto auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center; /* added to center the image horizontally */
+  width: min(1100px, 92vw);
+  height: clamp(260px, 34vw, 360px);
+  margin: clamp(1.5rem, 5vw, 2.6rem) auto clamp(5.5rem, 8vw, 6.5rem);
+  border-radius: var(--radius-large);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
 }
-img {
-  height: 150px;
-  display: block; /* added to center the image vertically */
-  margin: 0 auto; /* added to center the image horizontally */
+
+.banner__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.65);
+}
+
+.banner__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, rgba(17, 24, 39, 0.85), rgba(79, 70, 229, 0.35));
+}
+
+.banner__content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding: clamp(2rem, 5vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  color: var(--color-surface);
+}
+
+.banner__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.banner__title {
+  margin: 0;
+  font-size: clamp(2.3rem, 5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.banner__subtitle {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 420px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+@media (max-width: 600px) {
+  .banner__content {
+    justify-content: center;
+  }
 }
